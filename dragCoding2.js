@@ -35,7 +35,6 @@ var dragArray = [
 
 var cuntnessLevel = function(dragName) {
   var cuntness;
-  var message;
   for(var i = 0; i < dragArray.length; i++) {
     if(dragName === dragArray[i].name) {
     cuntness = dragArray[i].charisma + dragArray[i].uniqueness + dragArray[i].nerve + dragArray[i].talent;
@@ -59,5 +58,16 @@ var noTeeNoShade = function(drag1, drag2) {
      }
    }
 
+/*dragArray.prototype.newDrag = function(name, charisma, uniqueness, nerve, talent) {
+  {
+    this.name = name,
+    this.charisma = charisma,
+    this.uniqueness = uniqueness,
+    this.nerve = nerve,
+    this.talent = talent
+  }
+}
+
+newDrag("Violet Chachki", 9, 10, 10, 10);*/
 noTeeNoShade("Bianca Del Rio","Courtney Act");
 cuntnessLevel("Katya");
