@@ -58,16 +58,18 @@ var noTeeNoShade = function(drag1, drag2) {
      }
    }
 
-/*dragArray.prototype.newDrag = function(name, charisma, uniqueness, nerve, talent) {
+function Object(name, charisma, uniqueness, nerve, talent) {
   {
-    this.name = name,
-    this.charisma = charisma,
-    this.uniqueness = uniqueness,
-    this.nerve = nerve,
-    this.talent = talent
+    this.name = name;
+    this.charisma = charisma;
+    this.uniqueness = uniqueness;
+    this.nerve = nerve;
+    this.talent = talent;
   }
 }
 
-newDrag("Violet Chachki", 9, 10, 10, 10);*/
-noTeeNoShade("Bianca Del Rio","Courtney Act");
-cuntnessLevel("Katya");
+dragArray.push(new Object("Violet Chachki", 9, 10, 10, 10));
+//noTeeNoShade("Bianca Del Rio","Courtney Act");
+//cuntnessLevel("Katya");
+
+alert(cuntnessLevel(dragArray[4]["name"]));
